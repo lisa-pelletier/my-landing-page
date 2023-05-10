@@ -1,0 +1,12 @@
+.banner {
+    background-image: linear-gradient(-145deg, rgba(0, 0, 0, 0.7) 2%, rgba(0, 0, 0, 0.1) 50%), url(../../img/banner-pic.png);   
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    top: 0;
+}
+
+.banner-description{
+    padding-top: 20% ;
+    padding-left: 10%;
+}

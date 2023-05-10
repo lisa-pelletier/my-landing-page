@@ -1,0 +1,195 @@
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/flex-card.css");
+@import url("components/card-blue.css");
+/* Global settings */
+body{
+    /* background-color: #F0F2EF ; */
+    background-color: #dfdfdf ;
+    color: #f9fdfe;
+    font-family: 'Chillax', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color: #f9fdfe;
+    padding: 2%;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+}
+
+h2{
+    color: #cae9ff;
+}
+
+
+/* Center text */
+
+    .text-center{
+        text-align: center;
+    }
+
+/* Container */
+
+    .container{
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 5%;
+    }
+
+/* Social */
+
+    .list-inline {
+        list-style: none;
+        padding-left: 0px; 
+    }
+
+    .list-inline > li {
+        display: inline;
+        padding: 0px 20px;
+    }
+
+    .list-inline > li > a {
+        color: white ;
+        font-size: 25px;
+        transition: 0.3s;
+    }
+    .list-inline > li > a:hover {
+        color: #cae9ff;
+    }
+
+
+
+/* Grow onn over effect */
+
+    .grow-on-hover {
+        vertical-align: middle;
+        display: inline-block;
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+
+    .grow-on-hover:hover, .grow-on-hover:focus, .grow-on-hover:active {
+        transform: scale(1.2);
+    }
+
+
+/* Responsive code */
+
+    @media (max-width: 960px) {
+        /* For a screen < 960px, this CSS will be read */
+        .container{
+            width: 60%;
+        }
+        #profile-pic{
+            width: 40%;
+
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+        .banner-description{
+            padding-top: 30% ;
+            padding-left: 10%;
+        }
+    }
+
+    @media (max-width: 720px) {
+        /* For a screen < 720px, this CSS will be read */
+        .container{
+            width: 70%;
+            padding: 5%;
+        }
+
+        #profile-pic{
+            width: 40%;
+        }
+
+        .button{
+            margin-bottom: 10%;
+            margin-top: 10%;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        .banner-description{
+            padding-top: 50% ;
+            padding-left: 10%;
+        }
+
+        .banner{
+            background-position: center;
+            background-size: fill;
+            top: 0px;
+        }
+
+    }
+
+    @media (max-width: 540px) {
+        /* For a screen < 540px, this CSS will be read */
+        .container{
+            width: 90%;
+            padding: 5%;
+        }
+        h1{
+            font-size: 30px;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+        #profile-pic{
+            width: 50%;
+        }
+
+        .list-inline > li > a {
+            font-size: 20px;
+        }
+
+        .card{
+            flex-basis: 30%;
+        }
+    }
+    
+/* Animations */
+
+    @keyframes wiggle {
+        0%, 7% {
+        transform: rotateZ(0);
+        }
+        15% {
+        transform: rotateZ(-12deg);
+        }
+        20% {
+        transform: rotateZ(10deg);
+        }
+        25% {
+        transform: rotateZ(-8deg);
+        }
+        30% {
+        transform: rotateZ(4deg);
+        }
+        35% {
+        transform: rotateZ(-2deg);
+        }
+        40%, 100% {
+        transform: rotateZ(0);
+        }
+    }

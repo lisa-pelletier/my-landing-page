@@ -1,0 +1,9 @@
+#profile-pic{
+    width: 40%;
+    border-radius: 50%;
+    filter: brightness(120%);
+}
+.card-pic{
+    width: 50%;
+    border-radius: 30%;
+}

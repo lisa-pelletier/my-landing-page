@@ -1,0 +1,20 @@
+/* Button */
+
+.button{
+    background-color: #78A1BB;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20px;
+    animation: wiggle 2s linear infinite;
+}
+.button:hover{
+    animation: none;
+}
